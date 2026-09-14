@@ -1,0 +1,245 @@
+[
+  {
+   "pins": [
+      [
+        "VDD",
+        "VSS"
+      ], [
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "VDD",
+        "VSS"
+      ], [
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "X",
+        "A0",
+        "A1",
+        "S",
+        "VDD",
+        "VSS"
+      ], [
+        "X",
+        "A0",
+        "A1",
+        "S",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "Q",
+        "CLK",
+        "D",
+        "RESET_B",
+        "VDD",
+        "VSS"
+      ], [
+        "Q",
+        "CLK",
+        "D",
+        "RESET_B",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "X",
+        "A",
+        "VDD",
+        "VSS"
+      ], [
+        "X",
+        "A",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "VDD",
+        "VSS"
+      ], [
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "X",
+        "A",
+        "VDD",
+        "VSS"
+      ], [
+        "X",
+        "A",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "VDD",
+        "VSS"
+      ], [
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "X",
+        "A",
+        "VDD",
+        "VSS"
+      ], [
+        "X",
+        "A",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "Y",
+        "A",
+        "VDD",
+        "VSS"
+      ], [
+        "Y",
+        "A",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "Y",
+        "A",
+        "B_N",
+        "VDD",
+        "VSS"
+      ], [
+        "Y",
+        "A",
+        "B_N",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "serial2parallel",
+      "serial2parallel"
+   ],
+   "devices": [
+       [
+         ["sg13g2_decap_8", 1],
+         ["sg13g2_fill_2", 1],
+         ["sg13g2_mux2_1", 24],
+         ["sg13g2_dfrbpq_1", 24],
+         ["sg13g2_dlygate4sd3_1", 33],
+         ["sg13g2_decap_4", 1],
+         ["sg13g2_buf_1", 24],
+         ["sg13g2_fill_1", 1],
+         ["sg13g2_buf_16", 5],
+         ["sg13g2_inv_1", 24],
+         ["sg13g2_nor2b_1", 1 ]
+       ], [
+         ["sg13g2_decap_8", 1 ],
+         ["sg13g2_fill_2", 1 ],
+         ["sg13g2_mux2_1", 24 ],
+         ["sg13g2_dfrbpq_1", 24 ],
+         ["sg13g2_dlygate4sd3_1", 33 ],
+         ["sg13g2_decap_4", 1 ],
+         ["sg13g2_buf_1", 24 ],
+         ["sg13g2_fill_1", 1 ],
+         ["sg13g2_buf_16", 5 ],
+         ["sg13g2_inv_1", 24 ],
+         ["sg13g2_nor2b_1", 1 ]
+       ]
+   ],
+   "nets": [
+    142,
+    142
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "clk",
+        "done_in",
+        "shift_in",
+        "reset",
+        "data_in",
+        "dout[4]",
+        "dout[6]",
+        "dout[5]",
+        "dout[7]",
+        "dout[8]",
+        "dout[9]",
+        "dout[0]",
+        "dout[10]",
+        "dout[3]",
+        "dout[2]",
+        "dout[1]",
+        "dout[11]",
+        "VDD",
+        "VSS"
+      ], [
+        "clk",
+        "done_in",
+        "shift_in",
+        "reset",
+        "data_in",
+        "dout[4]",
+        "dout[6]",
+        "dout[5]",
+        "dout[7]",
+        "dout[8]",
+        "dout[9]",
+        "dout[0]",
+        "dout[10]",
+        "dout[3]",
+        "dout[2]",
+        "dout[1]",
+        "dout[11]",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  }
+]

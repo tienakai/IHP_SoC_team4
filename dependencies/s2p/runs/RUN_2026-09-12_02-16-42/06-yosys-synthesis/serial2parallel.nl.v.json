@@ -1,0 +1,6696 @@
+{
+  "creator": "Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)",
+  "modules": {
+    "serial2parallel": {
+      "attributes": {
+        "hdlname": "serial2parallel",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/designer/shared/s2p/serial2parallel.v:1.1-27.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "shift_in": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "data_in": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "done_in": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "VDD": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "VSS": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "dout": {
+          "direction": "output",
+          "bits": [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+        }
+      },
+      "cells": {
+        "$abc$224$auto$blifparse.cc:397:parse_blif$225": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$226": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 14 ],
+            "A1": [ 22 ],
+            "S": [ 5 ],
+            "X": [ 23 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$227": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 13 ],
+            "A1": [ 24 ],
+            "S": [ 5 ],
+            "X": [ 25 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$228": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 12 ],
+            "A1": [ 26 ],
+            "S": [ 5 ],
+            "X": [ 27 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$229": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 11 ],
+            "A1": [ 28 ],
+            "S": [ 5 ],
+            "X": [ 29 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$230": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 10 ],
+            "A1": [ 30 ],
+            "S": [ 5 ],
+            "X": [ 31 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$231": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 9 ],
+            "A1": [ 32 ],
+            "S": [ 5 ],
+            "X": [ 33 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$232": {
+          "hide_name": 1,
+          "type": "sg13g2_nor2b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B_N": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B_N": [ 3 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$233": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 35 ],
+            "A1": [ 36 ],
+            "S": [ 34 ],
+            "X": [ 37 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$234": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 36 ],
+            "A1": [ 38 ],
+            "S": [ 34 ],
+            "X": [ 39 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$235": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 38 ],
+            "A1": [ 40 ],
+            "S": [ 34 ],
+            "X": [ 41 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$236": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 40 ],
+            "A1": [ 42 ],
+            "S": [ 34 ],
+            "X": [ 43 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$237": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 42 ],
+            "A1": [ 44 ],
+            "S": [ 34 ],
+            "X": [ 45 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$238": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 44 ],
+            "A1": [ 22 ],
+            "S": [ 34 ],
+            "X": [ 46 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$239": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 22 ],
+            "A1": [ 24 ],
+            "S": [ 34 ],
+            "X": [ 47 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$240": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 24 ],
+            "A1": [ 26 ],
+            "S": [ 34 ],
+            "X": [ 48 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$241": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 26 ],
+            "A1": [ 28 ],
+            "S": [ 34 ],
+            "X": [ 49 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$242": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 28 ],
+            "A1": [ 30 ],
+            "S": [ 34 ],
+            "X": [ 50 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$243": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 30 ],
+            "A1": [ 32 ],
+            "S": [ 34 ],
+            "X": [ 51 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$244": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 32 ],
+            "A1": [ 4 ],
+            "S": [ 34 ],
+            "X": [ 52 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$245": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 20 ],
+            "A1": [ 35 ],
+            "S": [ 5 ],
+            "X": [ 53 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$246": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 19 ],
+            "A1": [ 36 ],
+            "S": [ 5 ],
+            "X": [ 54 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$247": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 18 ],
+            "A1": [ 38 ],
+            "S": [ 5 ],
+            "X": [ 55 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$248": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 17 ],
+            "A1": [ 40 ],
+            "S": [ 5 ],
+            "X": [ 56 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$249": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 16 ],
+            "A1": [ 42 ],
+            "S": [ 5 ],
+            "X": [ 57 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$250": {
+          "hide_name": 1,
+          "type": "sg13g2_mux2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "S": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A0": [ 15 ],
+            "A1": [ 44 ],
+            "S": [ 5 ],
+            "X": [ 58 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$251": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$252": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$253": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 61 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$254": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$255": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$256": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 64 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$257": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$258": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$259": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$260": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$261": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$262": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$263": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$264": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$265": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$266": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$267": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$268": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$269": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$270": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$271": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$272": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$abc$224$auto$blifparse.cc:397:parse_blif$273": {
+          "hide_name": 1,
+          "type": "sg13g2_inv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$100": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 29 ],
+            "Q": [ 11 ],
+            "RESET_B": [ 78 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$101": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 27 ],
+            "Q": [ 12 ],
+            "RESET_B": [ 79 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$102": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 25 ],
+            "Q": [ 13 ],
+            "RESET_B": [ 80 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$103": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 23 ],
+            "Q": [ 14 ],
+            "RESET_B": [ 81 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$104": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 58 ],
+            "Q": [ 15 ],
+            "RESET_B": [ 21 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$105": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 57 ],
+            "Q": [ 16 ],
+            "RESET_B": [ 59 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$106": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 56 ],
+            "Q": [ 17 ],
+            "RESET_B": [ 60 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$107": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 55 ],
+            "Q": [ 18 ],
+            "RESET_B": [ 61 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$108": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 54 ],
+            "Q": [ 19 ],
+            "RESET_B": [ 62 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$109": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 53 ],
+            "Q": [ 20 ],
+            "RESET_B": [ 63 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$110": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 52 ],
+            "Q": [ 32 ],
+            "RESET_B": [ 64 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$111": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 51 ],
+            "Q": [ 30 ],
+            "RESET_B": [ 65 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$112": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 50 ],
+            "Q": [ 28 ],
+            "RESET_B": [ 66 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$113": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 49 ],
+            "Q": [ 26 ],
+            "RESET_B": [ 67 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$114": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 48 ],
+            "Q": [ 24 ],
+            "RESET_B": [ 68 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$115": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 47 ],
+            "Q": [ 22 ],
+            "RESET_B": [ 69 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$116": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 46 ],
+            "Q": [ 44 ],
+            "RESET_B": [ 70 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$117": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 45 ],
+            "Q": [ 42 ],
+            "RESET_B": [ 71 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$118": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 43 ],
+            "Q": [ 40 ],
+            "RESET_B": [ 72 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$119": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 41 ],
+            "Q": [ 38 ],
+            "RESET_B": [ 73 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$120": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 39 ],
+            "Q": [ 36 ],
+            "RESET_B": [ 74 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$121": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 37 ],
+            "Q": [ 35 ],
+            "RESET_B": [ 75 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$98": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 33 ],
+            "Q": [ 9 ],
+            "RESET_B": [ 76 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$99": {
+          "hide_name": 1,
+          "type": "sg13g2_dfrbpq_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:14.5-25.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output",
+            "RESET_B": "input"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 31 ],
+            "Q": [ 10 ],
+            "RESET_B": [ 77 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$224$auto$rtlil.cc:3492:NotGate$131": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$135": {
+          "hide_name": 1,
+          "bits": [ 59 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$139": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$143": {
+          "hide_name": 1,
+          "bits": [ 61 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$147": {
+          "hide_name": 1,
+          "bits": [ 62 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$151": {
+          "hide_name": 1,
+          "bits": [ 63 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$155": {
+          "hide_name": 1,
+          "bits": [ 64 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$159": {
+          "hide_name": 1,
+          "bits": [ 65 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$163": {
+          "hide_name": 1,
+          "bits": [ 66 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$167": {
+          "hide_name": 1,
+          "bits": [ 67 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$171": {
+          "hide_name": 1,
+          "bits": [ 68 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$175": {
+          "hide_name": 1,
+          "bits": [ 69 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$179": {
+          "hide_name": 1,
+          "bits": [ 70 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$183": {
+          "hide_name": 1,
+          "bits": [ 71 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$187": {
+          "hide_name": 1,
+          "bits": [ 72 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$191": {
+          "hide_name": 1,
+          "bits": [ 73 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$195": {
+          "hide_name": 1,
+          "bits": [ 74 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$199": {
+          "hide_name": 1,
+          "bits": [ 75 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$203": {
+          "hide_name": 1,
+          "bits": [ 76 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$207": {
+          "hide_name": 1,
+          "bits": [ 77 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$211": {
+          "hide_name": 1,
+          "bits": [ 78 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$215": {
+          "hide_name": 1,
+          "bits": [ 79 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$219": {
+          "hide_name": 1,
+          "bits": [ 80 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3492:NotGate$223": {
+          "hide_name": 1,
+          "bits": [ 81 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$129": {
+          "hide_name": 1,
+          "bits": [ 58 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$133": {
+          "hide_name": 1,
+          "bits": [ 57 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$137": {
+          "hide_name": 1,
+          "bits": [ 56 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$141": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$145": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$149": {
+          "hide_name": 1,
+          "bits": [ 53 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$153": {
+          "hide_name": 1,
+          "bits": [ 52 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$157": {
+          "hide_name": 1,
+          "bits": [ 51 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$161": {
+          "hide_name": 1,
+          "bits": [ 50 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$165": {
+          "hide_name": 1,
+          "bits": [ 49 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$169": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$173": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$177": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$181": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$185": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$189": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$193": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$197": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$201": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$205": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$209": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$213": {
+          "hide_name": 1,
+          "bits": [ 27 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$217": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$auto$rtlil.cc:3501:MuxGate$221": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+          }
+        },
+        "$abc$224$new_n84": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+          }
+        },
+        "VDD": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:7.11-7.14"
+          }
+        },
+        "VSS": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:8.11-8.14"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:2.11-2.14"
+          }
+        },
+        "data_in": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:4.11-4.18"
+          }
+        },
+        "done_in": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:5.11-5.18"
+          }
+        },
+        "dout": {
+          "hide_name": 0,
+          "bits": [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:9.23-9.27"
+          }
+        },
+        "internal_data_reg[0]": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[10]": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "offset": 10,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[11]": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "offset": 11,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[1]": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "offset": 1,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[2]": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "offset": 2,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[3]": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "offset": 3,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[4]": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "offset": 4,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[5]": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "offset": 5,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[6]": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "offset": 6,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[7]": {
+          "hide_name": 0,
+          "bits": [ 42 ],
+          "offset": 7,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[8]": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "offset": 8,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "internal_data_reg[9]": {
+          "hide_name": 0,
+          "bits": [ 38 ],
+          "offset": 9,
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:12.16-12.33"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:6.11-6.16"
+          }
+        },
+        "shift_in": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/designer/shared/s2p/serial2parallel.v:3.11-3.19"
+          }
+        }
+      }
+    },
+    "sg13g2_Corner": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "32400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_Filler1000": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "900",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_Filler10000": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "18000",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_Filler200": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "180",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_Filler2000": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "1800",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_Filler400": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "360",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_Filler4000": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "3600",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_IOPadAnalog": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "padres": {
+          "direction": "inout",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.766244"
+          }
+        },
+        "padres": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.605573"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadIOVdd": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_IOPadIOVss": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_IOPadIn": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "p2c": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "p2c": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.234452"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadInOut16mA": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "p2c": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "c2p_en": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0276161"
+          }
+        },
+        "c2p_en": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.0258877"
+          }
+        },
+        "p2c": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.296502"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadInOut30mA": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "p2c": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "c2p_en": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0276151"
+          }
+        },
+        "c2p_en": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.0258869"
+          }
+        },
+        "p2c": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.384158"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadInOut4mA": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "p2c": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "c2p_en": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0276149"
+          }
+        },
+        "c2p_en": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.0258878"
+          }
+        },
+        "p2c": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.220789"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadOut16mA": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0390222"
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadOut30mA": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0390226"
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadOut4mA": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0390248"
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadTriOut16mA": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "c2p_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0272424"
+          }
+        },
+        "c2p_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0263313"
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.289881"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadTriOut30mA": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "c2p_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0272424"
+          }
+        },
+        "c2p_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0263311"
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.380696"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadTriOut4mA": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "pad": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "c2p": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "c2p_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "c2p": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0272416"
+          }
+        },
+        "c2p_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0263357"
+          }
+        },
+        "pad": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.212106"
+          }
+        }
+      }
+    },
+    "sg13g2_IOPadVdd": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_IOPadVss": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14400",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_a21o_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "12.7008",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00271758"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00280734"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00263163"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_a21o_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00289873"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00289238"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00274853"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_a21oi_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00301392"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00304949"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00287829"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_a21oi_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00581309"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00608046"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00564011"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_a221oi_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "B2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "C1": {
+          "direction": "input",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00296655"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00300247"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00292453"
+          }
+        },
+        "B2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00302059"
+          }
+        },
+        "C1": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "capacitance": "0.0028559"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_a22oi_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8486",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "B2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00310361"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00309576"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00303788"
+          }
+        },
+        "B2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00301537"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_and2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00254256"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00253612"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_and2_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8864",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00253864"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00255322"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_and3_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "12.7008",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00253572"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00251441"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00252248"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_and3_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "12.7008",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00255446"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00252396"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00252784"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_and4_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00236977"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00249579"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00249119"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00249915"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_and4_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "16.3296",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00237367"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00249258"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00249039"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.0024971"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_antennanp": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "5.4432",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.0010804"
+          }
+        }
+      }
+    },
+    "sg13g2_buf_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00226339"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_buf_16": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "45.36",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.0170499"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_buf_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00261926"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_buf_4": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00370215"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_buf_8": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "23.5872",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00856578"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_decap_4": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_decap_8": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "12.7008",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_dfrbp_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "52.6176",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "Q_N": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00279631"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00154954"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "Q_N": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.00513299"
+          }
+        }
+      }
+    },
+    "sg13g2_dfrbp_2": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "54.432",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "Q_N": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00280582"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00155334"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "Q_N": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.00518374"
+          }
+        }
+      }
+    },
+    "sg13g2_dfrbpq_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "48.9888",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00276976"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00141954"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00508684"
+          }
+        }
+      }
+    },
+    "sg13g2_dfrbpq_2": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "50.8032",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00277906"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00142328"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00513072"
+          }
+        }
+      }
+    },
+    "sg13g2_dlhq_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "30.8448",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "D": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "GATE": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "D": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00228262"
+          }
+        },
+        "GATE": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00228336"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_dlhr_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "32.6592",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "D": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "Q_N": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "GATE": {
+          "direction": "input",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "D": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00207682"
+          }
+        },
+        "GATE": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.00223878"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "Q_N": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00311214"
+          }
+        }
+      }
+    },
+    "sg13g2_dlhrq_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "27.216",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "D": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "GATE": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "D": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00212744"
+          }
+        },
+        "GATE": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00218896"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00294627"
+          }
+        }
+      }
+    },
+    "sg13g2_dllr_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "34.4736",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "D": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "Q_N": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "GATE_N": {
+          "direction": "input",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "D": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00214712"
+          }
+        },
+        "GATE_N": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.002304"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "Q_N": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.0030741"
+          }
+        }
+      }
+    },
+    "sg13g2_dllrq_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "29.0304",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "D": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "GATE_N": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "D": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00203855"
+          }
+        },
+        "GATE_N": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00217115"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00298489"
+          }
+        }
+      }
+    },
+    "sg13g2_dlygate4sd1_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00148644"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_dlygate4sd2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00148265"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_dlygate4sd3_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "16.3296",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00150175"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_ebufn_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "18.144",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Z": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "TE_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00261694"
+          }
+        },
+        "TE_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00638076"
+          }
+        },
+        "Z": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00595145"
+          }
+        }
+      }
+    },
+    "sg13g2_ebufn_4": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "27.216",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Z": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "TE_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00295943"
+          }
+        },
+        "TE_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0104467"
+          }
+        },
+        "Z": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0116701"
+          }
+        }
+      }
+    },
+    "sg13g2_ebufn_8": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "45.36",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Z": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "TE_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00577312"
+          }
+        },
+        "TE_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0175575"
+          }
+        },
+        "Z": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0230497"
+          }
+        }
+      }
+    },
+    "sg13g2_einvn_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "16.3296",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Z": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "TE_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00408184"
+          }
+        },
+        "TE_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00486017"
+          }
+        },
+        "Z": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00599833"
+          }
+        }
+      }
+    },
+    "sg13g2_einvn_4": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "23.5872",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Z": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "TE_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00796158"
+          }
+        },
+        "TE_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00906303"
+          }
+        },
+        "Z": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0117786"
+          }
+        }
+      }
+    },
+    "sg13g2_einvn_8": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "39.9168",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Z": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "TE_B": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.0157512"
+          }
+        },
+        "TE_B": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0155516"
+          }
+        },
+        "Z": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.023454"
+          }
+        }
+      }
+    },
+    "sg13g2_fill_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "1.8144",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_fill_2": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "3.6288",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_fill_4": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_fill_8": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+      },
+      "cells": {
+      },
+      "netnames": {
+      }
+    },
+    "sg13g2_inv_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "5.4432",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00286745"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_inv_16": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "34.4736",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.0435406"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_inv_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00567488"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_inv_4": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8864",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.0112211"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_inv_8": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "18.144",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.0224507"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_lgcp_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "27.216",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "GATE": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "GCLK": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00493856"
+          }
+        },
+        "GATE": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.002298"
+          }
+        },
+        "GCLK": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_mux2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "18.144",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "S": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "A0": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A0": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00278055"
+          }
+        },
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00288461"
+          }
+        },
+        "S": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00505031"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_mux2_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "19.9584",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "S": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "A0": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A0": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00277208"
+          }
+        },
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00287527"
+          }
+        },
+        "S": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00504218"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_mux4_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "38.1024",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "A3": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "S1": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "A0": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "S0": {
+          "direction": "input",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A0": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "capacitance": "0.0027824"
+          }
+        },
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00275974"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00278105"
+          }
+        },
+        "A3": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00284281"
+          }
+        },
+        "S0": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "capacitance": "0.00824878"
+          }
+        },
+        "S1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00501805"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nand2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00288593"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00297812"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nand2_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8864",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00559162"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00571313"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nand2b_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "B": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "A_N": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A_N": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00224218"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00302537"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nand2b_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "B": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "A_N": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A_N": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00219968"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00561566"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nand3_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00287977"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00300949"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00297917"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nand3b_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "12.7008",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "B": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "A_N": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A_N": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00222256"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00297309"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00298984"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nand4_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8864",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00287103"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00301029"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00302909"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00299933"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00304068"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00291906"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor2_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8864",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00580332"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00560432"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor2b_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "B_N": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00292348"
+          }
+        },
+        "B_N": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00226593"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor2b_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "12.7008",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "B_N": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00567165"
+          }
+        },
+        "B_N": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00268047"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor3_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00301098"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00302226"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00289876"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor3_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "16.3296",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00575969"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.0057518"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00557185"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor4_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8864",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00298675"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.003003"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00297233"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00283259"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_nor4_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "21.7728",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00576178"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00571722"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00567206"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00553401"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_o21ai_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00337156"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00334058"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00320965"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_or2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00246875"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00229712"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_or2_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "10.8864",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00245609"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00228363"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_or3_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "12.7008",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00259423"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00252763"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00240308"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_or3_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00258569"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00252154"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00239671"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_or4_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00258785"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00249715"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.00246439"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00238229"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_or4_2": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "16.3296",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00256792"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00249513"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "capacitance": "0.0024635"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00237806"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_sdfbbp_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "63.504",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "Q_N": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "SCD": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "SCE": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "SET_B": {
+          "direction": "input",
+          "bits": [ 9 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00302108"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00197833"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "Q_N": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.00173907"
+          }
+        },
+        "SCD": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "capacitance": "0.00197678"
+          }
+        },
+        "SCE": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "capacitance": "0.00354229"
+          }
+        },
+        "SET_B": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "capacitance": "0.00524626"
+          }
+        }
+      }
+    },
+    "sg13g2_sdfrbp_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "68.9472",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "Q_N": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "SCD": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "SCE": {
+          "direction": "input",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00293824"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00277037"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "Q_N": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.00510895"
+          }
+        },
+        "SCD": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "capacitance": "0.00288527"
+          }
+        },
+        "SCE": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "capacitance": "0.0048441"
+          }
+        }
+      }
+    },
+    "sg13g2_sdfrbp_2": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "72.576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "Q_N": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "SCD": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "SCE": {
+          "direction": "input",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00293819"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00276809"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "Q_N": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.0051079"
+          }
+        },
+        "SCD": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "capacitance": "0.002882"
+          }
+        },
+        "SCE": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "capacitance": "0.00484421"
+          }
+        }
+      }
+    },
+    "sg13g2_sdfrbpq_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "63.504",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "SCD": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "SCE": {
+          "direction": "input",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00293778"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00277037"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00509594"
+          }
+        },
+        "SCD": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.00288438"
+          }
+        },
+        "SCE": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "capacitance": "0.004844"
+          }
+        }
+      }
+    },
+    "sg13g2_sdfrbpq_2": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "72.576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "RESET_B": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "SCD": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "SCE": {
+          "direction": "input",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00293785"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00276791"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "RESET_B": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00510599"
+          }
+        },
+        "SCD": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "capacitance": "0.00288297"
+          }
+        },
+        "SCE": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "capacitance": "0.00484385"
+          }
+        }
+      }
+    },
+    "sg13g2_sighold": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "9.072",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "SH": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "SH": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.0181867"
+          }
+        }
+      }
+    },
+    "sg13g2_slgcp_1": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "30.8448",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "GATE": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "GCLK": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "SCE": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00497857"
+          }
+        },
+        "GATE": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00193037"
+          }
+        },
+        "GCLK": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "SCE": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "capacitance": "0.00232746"
+          }
+        }
+      }
+    },
+    "sg13g2_tiehi": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "L_HI": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "L_HI": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_tielo": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "7.2576",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "L_LO": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "L_LO": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_xnor2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00562179"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00508831"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "sg13g2_xor2_1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "area": "14.5152",
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "X": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "capacitance": "0.00574527"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "capacitance": "0.00513561"
+          }
+        },
+        "X": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    }
+  }
+}

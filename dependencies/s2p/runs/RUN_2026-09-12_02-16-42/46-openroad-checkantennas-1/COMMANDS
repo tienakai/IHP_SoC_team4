@@ -1,0 +1,1 @@
+openroad -exit -threads None -no_splash -metrics /home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/46-openroad-checkantennas-1/or_metrics_out.json /nix/store/4lnizdcfpwncfgmyqhj7a0vd92nr2swy-python3.13-librelane-3.1.0.dev3/lib/python3.13/site-packages/librelane/scripts/openroad/antenna_check.tcl

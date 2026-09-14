@@ -1,0 +1,145 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+Startpoint: reset (input port clocked by clk)
+Endpoint: _099_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  4.000000    4.000000 v input external delay
+     1    0.004199    0.011699    0.002137    4.002137 v reset (in)
+                                                         reset (net)
+                      0.011699    0.000000    4.002137 v input3/A (sg13g2_buf_1)
+     1    0.016773    0.041032    0.063028    4.065166 v input3/X (sg13g2_buf_1)
+                                                         net3 (net)
+                      0.041151    0.001906    4.067072 v fanout22/A (sg13g2_buf_1)
+     4    0.039950    0.088265    0.109901    4.176973 v fanout22/X (sg13g2_buf_1)
+                                                         net22 (net)
+                      0.088438    0.003367    4.180341 v fanout20/A (sg13g2_buf_1)
+     7    0.035517    0.079194    0.119664    4.300005 v fanout20/X (sg13g2_buf_1)
+                                                         net20 (net)
+                      0.079314    0.002344    4.302349 v fanout19/A (sg13g2_buf_1)
+     8    0.042620    0.094126    0.126834    4.429183 v fanout19/X (sg13g2_buf_1)
+                                                         net19 (net)
+                      0.094219    0.002593    4.431776 v _095_/A (sg13g2_inv_1)
+     1    0.008121    0.040034    0.049692    4.481468 ^ _095_/Y (sg13g2_inv_1)
+                                                         _021_ (net)
+                      0.040050    0.000666    4.482133 ^ _099_/RESET_B (sg13g2_dfrbpq_1)
+                                              4.482133   data arrival time
+
+                                 20.000000   20.000000   clock clk (rise edge)
+                                  0.000000   20.000000   clock source latency
+     1    0.045267    0.039798    0.026557   20.026558 ^ clk (in)
+                                                         clk (net)
+                      0.041924    0.000000   20.026558 ^ clkbuf_0_clk/A (sg13g2_buf_16)
+     4    0.084269    0.023237    0.055392   20.081949 ^ clkbuf_0_clk/X (sg13g2_buf_16)
+                                                         clknet_0_clk (net)
+                      0.026115    0.005782   20.087730 ^ clkbuf_2_1__f_clk/A (sg13g2_buf_16)
+     6    0.032252    0.015474    0.045359   20.133091 ^ clkbuf_2_1__f_clk/X (sg13g2_buf_16)
+                                                         clknet_2_1__leaf_clk (net)
+                      0.015499    0.001114   20.134205 ^ _099_/CLK (sg13g2_dfrbpq_1)
+                                 -0.250000   19.884205   clock uncertainty
+                                  0.000000   19.884205   clock reconvergence pessimism
+                                 -0.086048   19.798157   library recovery time
+                                             19.798157   data required time
+---------------------------------------------------------------------------------------------
+                                             19.798157   data required time
+                                             -4.482133   data arrival time
+---------------------------------------------------------------------------------------------
+                                             15.316023   slack (MET)
+
+
+Startpoint: done_in (input port clocked by clk)
+Endpoint: _113_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  4.000000    4.000000 v input external delay
+     1    0.003423    0.011319    0.001795    4.001795 v done_in (in)
+                                                         done_in (net)
+                      0.011319    0.000000    4.001795 v input2/A (sg13g2_buf_1)
+     2    0.025894    0.059020    0.077410    4.079205 v input2/X (sg13g2_buf_1)
+                                                         net2 (net)
+                      0.059349    0.003747    4.082952 v fanout23/A (sg13g2_buf_1)
+     8    0.084749    0.183169    0.176300    4.259252 v fanout23/X (sg13g2_buf_1)
+                                                         net23 (net)
+                      0.183267    0.003848    4.263100 v _056_/A (sg13g2_nor2b_1)
+     2    0.009731    0.086653    0.102182    4.365283 ^ _056_/Y (sg13g2_nor2b_1)
+                                                         _048_ (net)
+                      0.086658    0.000571    4.365853 ^ fanout17/A (sg13g2_buf_1)
+     8    0.093767    0.248054    0.226221    4.592074 ^ fanout17/X (sg13g2_buf_1)
+                                                         net17 (net)
+                      0.249472    0.016058    4.608132 ^ _063_/S (sg13g2_mux2_1)
+     1    0.002307    0.022757    0.153379    4.761511 v _063_/X (sg13g2_mux2_1)
+                                                         _035_ (net)
+                      0.022758    0.000163    4.761674 v hold41/A (sg13g2_dlygate4sd3_1)
+     1    0.002157    0.024022    0.261113    5.022787 v hold41/X (sg13g2_dlygate4sd3_1)
+                                                         net41 (net)
+                      0.024022    0.000087    5.022874 v _113_/D (sg13g2_dfrbpq_1)
+                                              5.022874   data arrival time
+
+                                 20.000000   20.000000   clock clk (rise edge)
+                                  0.000000   20.000000   clock source latency
+     1    0.045267    0.039798    0.026557   20.026558 ^ clk (in)
+                                                         clk (net)
+                      0.041924    0.000000   20.026558 ^ clkbuf_0_clk/A (sg13g2_buf_16)
+     4    0.084269    0.023237    0.055392   20.081949 ^ clkbuf_0_clk/X (sg13g2_buf_16)
+                                                         clknet_0_clk (net)
+                      0.026115    0.005782   20.087730 ^ clkbuf_2_1__f_clk/A (sg13g2_buf_16)
+     6    0.032252    0.015474    0.045359   20.133091 ^ clkbuf_2_1__f_clk/X (sg13g2_buf_16)
+                                                         clknet_2_1__leaf_clk (net)
+                      0.015481    0.000618   20.133709 ^ _113_/CLK (sg13g2_dfrbpq_1)
+                                 -0.250000   19.883709   clock uncertainty
+                                  0.000000   19.883709   clock reconvergence pessimism
+                                 -0.070503   19.813206   library setup time
+                                             19.813206   data required time
+---------------------------------------------------------------------------------------------
+                                             19.813206   data required time
+                                             -5.022874   data arrival time
+---------------------------------------------------------------------------------------------
+                                             14.790332   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

@@ -1,0 +1,72 @@
+[WARNING ORD-0032] Invalid thread number specification: None.
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/37-openroad-resizertimingpostcts/serial2parallel.odb'…
+Reading design constraints file at '/nix/store/4lnizdcfpwncfgmyqhj7a0vd92nr2swy-python3.13-librelane-3.1.0.dev3/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 4.0
+[INFO] Setting input delay to: 4.0
+[INFO] Setting load to: 0.006
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5.0%
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal4 and clock max routing layer to Metal4. 
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal4
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.4200  line-2-Via Pitch: 0.3650
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.4800  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.4200  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.4800  line-2-Via Pitch: 0.4100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 6 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 9
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        27895         18529          33.58%
+Metal3     Horizontal      34828         22850          34.39%
+Metal4     Vertical        27895         18529          33.58%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 588
+[INFO GRT-0198] Via related Steiner nodes: 8
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 734
+[INFO GRT-0112] Final usage 3D: 2930
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           18529           192            1.04%             0 /  0 /  0
+Metal3           22850           536            2.35%             0 /  0 /  0
+Metal4           18529             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            59908           728            1.22%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 6372 um
+[INFO GRT-0014] Routed nets: 140
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Clock buffer                              5     226.80
+  Timing Repair Buffer                     57     713.06
+  Inverter                                 24     130.64
+  Sequential cell                          24    1175.73
+  Multi-Input combinational cell           25     444.53
+  Total                                   135    2690.76
+Writing OpenROAD database to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/39-openroad-globalrouting/serial2parallel.odb'…
+Writing layout to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/39-openroad-globalrouting/serial2parallel.def'…

@@ -1,0 +1,12 @@
+{
+	"design_powergrid__voltage__worst__net:VDD__corner:nom_typ_1p20V_25C": 1.19965,
+	"design_powergrid__drop__average__net:VDD__corner:nom_typ_1p20V_25C": 1.19999,
+	"design_powergrid__drop__worst__net:VDD__corner:nom_typ_1p20V_25C": 0.000349429,
+	"design_powergrid__voltage__worst__net:VSS__corner:nom_typ_1p20V_25C": 0.000569939,
+	"design_powergrid__drop__average__net:VSS__corner:nom_typ_1p20V_25C": 9.84453e-06,
+	"design_powergrid__drop__worst__net:VSS__corner:nom_typ_1p20V_25C": 0.000569939,
+	"flow__warnings__count": 1,
+	"flow__errors__count": 0,
+	"flow__warnings__count:ORD-0032": 1,
+	"flow__warnings__type_count": 1
+}

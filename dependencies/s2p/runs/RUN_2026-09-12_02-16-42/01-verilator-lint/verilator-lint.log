@@ -1,0 +1,13 @@
+%Warning-UNUSEDSIGNAL: /home/designer/shared/s2p/serial2parallel.v:7:11: Signal is not used: 'VDD'
+                                                                       : ... note: In instance 'serial2parallel'
+    7 |     input VDD,
+      |           ^~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.046
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/designer/shared/s2p/serial2parallel.v:8:11: Signal is not used: 'VSS'
+                                                                       : ... note: In instance 'serial2parallel'
+    8 |     input VSS,
+      |           ^~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.046 2026-02-28 rev v5.046
+- Verilator: Built from 0.147 MB sources in 108 modules, into 0.009 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.062 s (elab=0.015, cvt=0.022, bld=0.000); cpu 0.020 s on 1 threads; allocated 21.457 MB

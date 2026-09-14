@@ -1,0 +1,157 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Startpoint: reset (input port clocked by clk)
+Endpoint: _098_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  4.000000    4.000000 v input external delay
+     1    0.004358    0.018155    0.003225    4.003225 v reset (in)
+                                                         reset (net)
+                      0.018155    0.000000    4.003225 v input3/A (sg13g2_buf_1)
+     1    0.020717    0.072378    0.105191    4.108417 v input3/X (sg13g2_buf_1)
+                                                         net3 (net)
+                      0.072461    0.002132    4.110548 v fanout22/A (sg13g2_buf_1)
+     4    0.026033    0.086876    0.144029    4.254577 v fanout22/X (sg13g2_buf_1)
+                                                         net22 (net)
+                      0.086928    0.000956    4.255532 v fanout20/A (sg13g2_buf_1)
+     7    0.031225    0.102713    0.162478    4.418011 v fanout20/X (sg13g2_buf_1)
+                                                         net20 (net)
+                      0.102729    0.001334    4.419344 v fanout19/A (sg13g2_buf_1)
+     8    0.036155    0.117719    0.180149    4.599493 v fanout19/X (sg13g2_buf_1)
+                                                         net19 (net)
+                      0.117732    0.001327    4.600820 v _094_/A (sg13g2_inv_1)
+     1    0.006525    0.050980    0.068929    4.669750 ^ _094_/Y (sg13g2_inv_1)
+                                                         _020_ (net)
+                      0.050980    0.000058    4.669808 ^ _098_/RESET_B (sg13g2_dfrbpq_1)
+                                              4.669808   data arrival time
+
+                                 20.000000   20.000000   clock clk (rise edge)
+                                  0.000000   20.000000   clock source latency
+     1    0.049876    0.064457    0.043762   20.043762 ^ clk (in)
+                                                         clk (net)
+                      0.066940    0.000000   20.043762 ^ clkbuf_0_clk/A (sg13g2_buf_16)
+     4    0.080607    0.034407    0.089432   20.133196 ^ clkbuf_0_clk/X (sg13g2_buf_16)
+                                                         clknet_0_clk (net)
+                      0.034864    0.002824   20.136019 ^ clkbuf_2_1__f_clk/A (sg13g2_buf_16)
+     6    0.025413    0.020925    0.065183   20.201202 ^ clkbuf_2_1__f_clk/X (sg13g2_buf_16)
+                                                         clknet_2_1__leaf_clk (net)
+                      0.020928    0.000473   20.201675 ^ _098_/CLK (sg13g2_dfrbpq_1)
+                                 -0.250000   19.951677   clock uncertainty
+                                  0.000000   19.951677   clock reconvergence pessimism
+                                 -0.129533   19.822144   library recovery time
+                                             19.822144   data required time
+---------------------------------------------------------------------------------------------
+                                             19.822144   data required time
+                                             -4.669808   data arrival time
+---------------------------------------------------------------------------------------------
+                                             15.152335   slack (MET)
+
+
+Startpoint: done_in (input port clocked by clk)
+Endpoint: _111_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  4.000000    4.000000 v input external delay
+     1    0.003235    0.017363    0.002371    4.002370 v done_in (in)
+                                                         done_in (net)
+                      0.017363    0.000000    4.002370 v input2/A (sg13g2_buf_1)
+     2    0.028904    0.095086    0.123952    4.126322 v input2/X (sg13g2_buf_1)
+                                                         net2 (net)
+                      0.095294    0.003828    4.130150 v fanout23/A (sg13g2_buf_1)
+     8    0.072145    0.227668    0.255822    4.385972 v fanout23/X (sg13g2_buf_1)
+                                                         net23 (net)
+                      0.227668    0.000298    4.386271 v _056_/A (sg13g2_nor2b_1)
+     2    0.008570    0.117068    0.144209    4.530479 ^ _056_/Y (sg13g2_nor2b_1)
+                                                         _048_ (net)
+                      0.117068    0.000142    4.530621 ^ fanout17/A (sg13g2_buf_1)
+     8    0.074670    0.307982    0.307071    4.837692 ^ fanout17/X (sg13g2_buf_1)
+                                                         net17 (net)
+                      0.308441    0.010286    4.847978 ^ _065_/S (sg13g2_mux2_1)
+     1    0.002459    0.033980    0.235158    5.083136 v _065_/X (sg13g2_mux2_1)
+                                                         _033_ (net)
+                      0.033980    0.000023    5.083159 v _111_/D (sg13g2_dfrbpq_1)
+                                              5.083159   data arrival time
+
+                                 20.000000   20.000000   clock clk (rise edge)
+                                  0.000000   20.000000   clock source latency
+     1    0.049876    0.064457    0.043762   20.043762 ^ clk (in)
+                                                         clk (net)
+                      0.066940    0.000000   20.043762 ^ clkbuf_0_clk/A (sg13g2_buf_16)
+     4    0.080607    0.034407    0.089432   20.133196 ^ clkbuf_0_clk/X (sg13g2_buf_16)
+                                                         clknet_0_clk (net)
+                      0.034924    0.003059   20.136253 ^ clkbuf_2_0__f_clk/A (sg13g2_buf_16)
+     6    0.026689    0.021216    0.065452   20.201706 ^ clkbuf_2_0__f_clk/X (sg13g2_buf_16)
+                                                         clknet_2_0__leaf_clk (net)
+                      0.021217    0.000243   20.201950 ^ _111_/CLK (sg13g2_dfrbpq_1)
+                                 -0.250000   19.951950   clock uncertainty
+                                  0.000000   19.951950   clock reconvergence pessimism
+                                 -0.117350   19.834600   library setup time
+                                             19.834600   data required time
+---------------------------------------------------------------------------------------------
+                                             19.834600   data required time
+                                             -5.083159   data arrival time
+---------------------------------------------------------------------------------------------
+                                             14.751441   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 12 partially unannotated drivers.
+ output10/X
+ output11/X
+ output12/X
+ output13/X
+ output14/X
+ output15/X
+ output16/X
+ output5/X
+ output6/X
+ output7/X
+ output8/X
+ output9/X
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_typ_1p20V_25C: 0
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_typ_1p20V_25C: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_typ_1p20V_25C: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

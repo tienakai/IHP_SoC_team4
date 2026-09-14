@@ -1,0 +1,14 @@
+{
+    "json_h": "/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/05-yosys-jsonheader/serial2parallel.h.json",
+    "nl": "/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/06-yosys-synthesis/serial2parallel.nl.v",
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 2,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 73,
+        "design__instance__area": 1750.896,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

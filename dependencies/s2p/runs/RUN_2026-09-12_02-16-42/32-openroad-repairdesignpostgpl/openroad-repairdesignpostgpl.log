@@ -1,0 +1,67 @@
+[WARNING ORD-0032] Invalid thread number specification: None.
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/28-openroad-globalplacement/serial2parallel.odb'…
+Reading design constraints file at '/nix/store/4lnizdcfpwncfgmyqhj7a0vd92nr2swy-python3.13-librelane-3.1.0.dev3/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 4.0
+[INFO] Setting input delay to: 4.0
+[INFO] Setting load to: 0.006
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5.0%
+[INFO RSZ-0027] Inserted 4 sg13g2_buf_1 input buffers.
+[INFO RSZ-0028] Inserted 12 sg13g2_buf_1 output buffers.
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 20.0 -cap_margin 20.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |        94
+       10 |     +0.0% |       0 |       0 |             0 |        84
+       20 |     +0.0% |       0 |       0 |             0 |        74
+       30 |     +0.0% |       0 |       0 |             0 |        64
+       40 |     +0.0% |       0 |       0 |             0 |        54
+       50 |     +0.0% |       0 |       0 |             0 |        44
+       60 |     +0.0% |       0 |       0 |             0 |        34
+       70 |     +0.0% |       0 |       0 |             0 |        24
+       80 |     +0.0% |       0 |       0 |             0 |        14
+       90 |     +3.1% |       0 |       8 |             3 |         4
+    final |     +3.1% |       0 |       8 |             3 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0035] Found 3 fanout violations.
+[INFO RSZ-0038] Inserted 8 buffers in 3 nets.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        520.3 u
+average displacement        5.4 u
+max displacement           25.9 u
+original HPWL            4079.7 u
+legalized HPWL           4227.0 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 38 instances
+[INFO DPL-0021] HPWL before            4227.0 u
+[INFO DPL-0022] HPWL after             4164.2 u
+[INFO DPL-0023] HPWL delta               -1.5 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 48 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Timing Repair Buffer                     24     174.18
+  Inverter                                 24     130.64
+  Sequential cell                          24    1175.73
+  Multi-Input combinational cell           25     444.53
+  Total                                    97    1925.08
+Writing OpenROAD database to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/32-openroad-repairdesignpostgpl/serial2parallel.odb'…
+Writing netlist to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/32-openroad-repairdesignpostgpl/serial2parallel.nl.v'…
+Writing powered netlist to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/32-openroad-repairdesignpostgpl/serial2parallel.pnl.v'…
+Writing layout to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/32-openroad-repairdesignpostgpl/serial2parallel.def'…
+Writing timing constraints to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/32-openroad-repairdesignpostgpl/serial2parallel.sdc'…

@@ -1,0 +1,36 @@
+[WARNING ORD-0032] Invalid thread number specification: None.
+Reading technology LEF file at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef'…
+[INFO ODB-0227] LEF file: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+Reading cell LEF file at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef'…
+[INFO ODB-0227] LEF file: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+Reading gpio pad LEF file at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef'…
+[INFO ODB-0227] LEF file: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0127] Reading DEF file: /home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/53-odb-cellfrequencytables/serial2parallel.def
+[INFO ODB-0128] Design: serial2parallel
+[INFO ODB-0130]     Created 19 pins.
+[INFO ODB-0131]     Created 6932 components and 14231 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 13864 connections.
+[INFO ODB-0133]     Created 140 nets and 367 connections.
+[INFO ODB-0134] Finished DEF file: /home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/53-odb-cellfrequencytables/serial2parallel.def
+Using RCX ruleset '/opt/pdks/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
++ extract_parasitics  -ext_model_file /opt/pdks/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules -lef_res
+[INFO RCX-0435] Reading extraction model file /opt/pdks/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation serial2parallel (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 430 rc segments
+[INFO RCX-0439] Coupling Cap extraction serial2parallel ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 68% of 928 wires extracted
+[INFO RCX-0442] 100% of 928 wires extracted
+[INFO RCX-0045] Extract 140 nets, 570 rsegs, 570 caps, 469 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                              6797   85206.04
+  Standard cell                           135    2690.76
+  Total                                  6932   87896.79
+Writing extracted parasitics to '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/54-openroad-rcx/nom/serial2parallel.nom.spef'…
+[INFO RCX-0443] 140 nets finished
