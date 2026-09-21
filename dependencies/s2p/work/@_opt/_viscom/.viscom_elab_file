@@ -1,1 +1,0 @@
-/home/tools/mentor/questasim/2024.2/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 393216 work.s2p_tb -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt -id 1-98039ba47087-69c35374-3ea9f-2d37c9 +__design_bin_path+/home/userdata/k68D/chienpv_68d/Desktop/sdf/s2p +__betafsm

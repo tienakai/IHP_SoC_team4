@@ -1,9 +1,0 @@
-set circuit1 [readnet spice /home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/68-magic-spiceextraction/serial2parallel.spice]
-set circuit2 [readnet verilog /dev/null]
-puts "Reading SPICE netlist file '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice'..."
-readnet spice /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice $circuit2
-puts "Reading SPICE netlist file '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice'..."
-readnet spice /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice $circuit2
-puts "Reading Verilog netlist file '/home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/52-openroad-fillinsertion/serial2parallel.pnl.v'..."
-readnet verilog /home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/52-openroad-fillinsertion/serial2parallel.pnl.v $circuit2
-lvs "$circuit1 serial2parallel" "$circuit2 serial2parallel" /nix/store/4lnizdcfpwncfgmyqhj7a0vd92nr2swy-python3.13-librelane-3.1.0.dev3/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl /home/designer/shared/s2p/runs/RUN_2026-09-12_02-16-42/70-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json
